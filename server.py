@@ -32,4 +32,8 @@ def process():
         else:
             session["log"].insert(0, "Entered a casino and lost "+str(-delta)+" golds... Ouch..")
     return redirect("/")
+@app.route("/reset", methods=["POST"])
+def reset():
+    session.clear()
+    return redirect("/")
 app.run(debug=True)
