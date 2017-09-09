@@ -42,11 +42,11 @@
         </form>
     </div>
     <p>Activities:</p>
-    <textarea class="log">
+    <div class="act">
 {% for x in session["log"]: %}
-{{x}}
+<p class="log" style="color: {{x[1]}}">{{x[0]}}</p>
 {% endfor %}
-    </textarea>
+    </div>
     <form action="/reset" method="post">
         <input type="submit" value="Reset">
     </form>

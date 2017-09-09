@@ -5,8 +5,13 @@
     text-align: center;
     border: 1pt solid black;
 }
-.log{
-    width: 500px;
+.act{
+    min-width: 400px;
+    max-width: 820px;
     height: 100px;
     border: 1pt solid black;
+    overflow-y: scroll;
+}
+.log{
+    margin: 0px;
 }
